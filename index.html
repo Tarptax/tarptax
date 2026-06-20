@@ -24,7 +24,7 @@ body {
   padding: 15px;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   color: white;
   padding: 30px 20px 50px;
@@ -39,15 +39,9 @@ body {
   margin-right: auto;
 }
 
-/* Hide unused headings */
-h1, h2 {
-  display: none;
-}
-
-/* TAGLINE */
 .tagline {
   font-size: 21px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -55,7 +49,7 @@ h1, h2 {
 /* CTA */
 .cta {
   display: inline-block;
-  margin: 12px auto 18px;
+  margin: 12px auto 10px;
   padding: 14px 34px;
   background: white;
   color: #0d3b66;
@@ -68,18 +62,29 @@ h1, h2 {
 }
 
 .cta:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.30);
+}
+
+/* SUBTEXT UNDER CTA */
+.process {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-top: 6px;
 }
 
 /* CONTENT */
 .content {
-  background: transparent;
-  position: relative;
   margin-top: -35px;
   padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+/* SERVING LINE */
+.serving {
+  margin: 0 auto 15px;
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 600px;
 }
 
 /* SERVICES */
@@ -88,15 +93,20 @@ h1, h2 {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .service {
-  width: 240px;
+  width: 260px;
   background: white;
-  padding: 14px;
+  padding: 16px;
   border-radius: 12px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  transition: all 0.2s ease;
+}
+
+.service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.15);
 }
 
 .service h3 {
@@ -125,7 +135,7 @@ footer {
 <div class="hero">
   <div class="container">
 
-    ./logo3.png
+    <img src="./logo3.png" class="logo" alt="T.A.R.P. Logo">
 
     <div class="tagline">
       Tax Preparation & IRS Resolution
@@ -138,20 +148,19 @@ footer {
       Request a Confidential Consultation
     </a>
 
-  </div>
-  
-<div style="font-size:14px; opacity:0.75; margin-top:8px;">
-  Clear communication. Efficient process. Handled professionally.
-</div>
+    <div class="process">
+      Clear communication. Efficient process. Handled professionally.
+    </div>
 
+  </div>
 </div>
 
 <!-- CONTENT -->
 <div class="container content">
 
-  <p style="margin-top: 0; font-size: 16px; opacity: 0.8;">
+  <div class="serving">
     Serving individuals, business owners, and fiduciaries
-  </p>
+  </div>
 
   <div class="services">
 
@@ -174,10 +183,11 @@ footer {
   </div>
 
   <div class="contact">
-    
-<p style="font-size:15px; opacity:0.75; margin-top:25px;">
-  Trusted support for clients, advisors, and professional relationships
-</p>
+
+    <p style="font-size:15px; opacity:0.75; margin-top:25px;">
+      Trusted support for clients, advisors, and professional relationships
+    </p>
+
     <p><strong>Bryan O’Connor, EA</strong></p>
     <p>Enrolled Agent | Tax Preparation & IRS Resolution Specialist</p>
     <p>Direct: bryan@tarptax.com</p>
