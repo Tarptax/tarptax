@@ -5,17 +5,16 @@
 <title>Tax & Resolution Professionals</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
+<style>
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(180deg, #0d2d50 0%, #102f5c 40%, #eef2f7 40%);
+  background: linear-gradient(180deg, #0d2d50 0%, #102f5c 45%, #eef2f7 45%);
   color: #1a2b44;
   text-align: center;
- min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .container {
@@ -27,51 +26,51 @@ body {
 /* HERO SECTION */
 .hero {
   color: white;
-  padding: 30px 20px 60px;
+  padding: 40px 20px 80px;
 }
 
 .logo {
-  width: 150px;
+  width: 400px; /* 🔥 MUCH LARGER */
+  max-width: 90%;
   margin-bottom: 25px;
 }
 
-h1 {
-  font-size: 38px;
-  margin: 8px;
+/* REMOVE OLD HEADINGS COMPLETELY */
+h1, h2 {
+  display: none;
 }
 
-h2 {
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
+/* NEW SINGLE LINE */
 .tagline {
-  font-size: 20px;
-  margin-bottom: 15px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
 }
 
+/* CTA */
 .cta {
-  
- display: block;
-  margin: 15px auto 25px;
-  padding: 16px 36px;
+  display: inline-block;
+  margin: 20px auto 25px;
+  padding: 16px 40px;
   background: white;
   color: #0d3b66;
   text-decoration: none;
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
-/* WHITE CARD SECTION */
+/* CONTENT */
 .content {
   background: transparent;
   position: relative;
-  margin-top: -40px;
-  padding: 20px;
+  margin-top: -50px;
+  padding: 25px;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.15);
 }
@@ -82,16 +81,14 @@ h2 {
   flex-wrap: wrap;
   margin-top: 30px;
 }
-  
-.service {
-  width: 240px;
-  margin: 10px;
 
+.service {
+  width: 260px;
+  margin: 12px;
   background: white;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  
 }
 
 .service h3 {
@@ -116,54 +113,49 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
+  <div class="container">
 
-<div class="container">
-
-<img src="./logo3.png" class="logo" alt="Company Logo">
-
-<h1>Tax & Resolution Professionals</h1>
-<h2>Professional Tax Preparation & IRS Resolution Services</h2>
+    <img src="./logo3.png" class="logo" alt="T.A.R.P Logo">
 
     <div class="tagline">
-Comprehensive Tax Services for Individuals & Businesses
-Preparation, Compliance, and IRS Resolution—Handled Professionally
-</div>
+      Comprehensive Tax Preparation & IRS Resolution for Individuals & Businesses
+    </div>
 
-<a href="mailto:bryan@tarptax.com" class="cta">
-Request a Free Consultation
-</a>
+    <a href="mailto:bryan@tarptax.com" class="cta">
+      Request a Free Consultation
+    </a>
 
-</div>
+  </div>
 </div>
 
 <!-- CONTENT -->
 <div class="container content">
 
-<div class="services">
+  <div class="services">
 
-<div class="service">
-<h3>Tax Preparation & Filing</h3>
-<p>Individual, business, and trust returns prepared accurately and on time.
-1040, 1120, 1120S, 1065, 1041 and more.</p>
-</div>
+    <div class="service">
+      <h3>Tax Preparation & Filing</h3>
+      <p>Individual, business, and trust returns prepared accurately and on time.
+      1040, 1120, 1120S, 1065, 1041 and more.</p>
+    </div>
 
-<div class="service">
-<h3>Tax Planning & Ongoing Support</h3>
-<p>Year-round guidance to minimize liability and avoid surprises.</p>
-</div>
+    <div class="service">
+      <h3>Tax Planning & Ongoing Support</h3>
+      <p>Year-round guidance to minimize liability and avoid surprises.</p>
+    </div>
 
-<div class="service">
-<h3>IRS Resolution & Representation</h3>
-<p>Resolve back taxes, stop collections, and negotiate with confidence.</p>
-</div>
+    <div class="service">
+      <h3>IRS Resolution & Representation</h3>
+      <p>Resolve back taxes, stop collections, and negotiate with confidence.</p>
+    </div>
 
-</div>
+  </div>
 
-<div class="contact">
-<p><strong>Bryan O’Connor, EA</strong></p>
-<p>Enrolled Agent | Tax Preparation & IRS Resolution Specialist</p>
-<p>Email: bryan@tarptax.com</p>
-</div>
+  <div class="contact">
+    <p><strong>Bryan O’Connor, EA</strong></p>
+    <p>Enrolled Agent | Tax Preparation & IRS Resolution Specialist</p>
+    <p>Email: bryan@tarptax.com</p>
+  </div>
 
 </div>
 
